@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .navbar {
     display: flex;
@@ -10,7 +11,7 @@
     width: 100%;
     height: 60px;
     position: fixed;
-    top: -1px;
+    top: 0;
     z-index: 1;
     background-color: #fff;
     padding: 10px 40px;
@@ -41,9 +42,35 @@
     display: flex;
     gap: 20px;
 }
-.fa-solid, .fa-regular {
+.fa-house, .fa-users, .fa-briefcase, .fa-comment, .fa-bell, .fa-user {
     font-size: 25px;
     color: rgb(85, 84, 84);
+    cursor: pointer;
+    height: 40px;
+}
+.fa-house:hover {
+    color: rgba(85, 84, 84, 0.589);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.589);
+}
+.fa-users:hover {
+    color: rgba(85, 84, 84, 0.589);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.589);
+}
+.fa-briefcase:hover {
+    color: rgba(85, 84, 84, 0.589);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.589);
+}
+.fa-bell:hover {
+    color: rgba(85, 84, 84, 0.589);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.589);
+}
+.fa-comment:hover {
+    color: rgba(85, 84, 84, 0.589);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.589);
+}
+.fa-user:hover {
+    color: rgba(85, 84, 84, 0.589);
+    border-bottom: 1px solid rgba(85, 84, 84, 0.589);
 }
 .post {
     margin: 80px auto 20px;
@@ -61,27 +88,40 @@
     right: 15px;
     top: -10px;
 }
-.name{
+.profilepic1{
+    border-radius: 50%;
+    width: 80px;
+    position: relative;
+    right: 15px;
+    top: -10px;
+}
+.name {
     position: relative;
     left: 70px;
     top: -75px;
 }
-.text-m{
+.text-m {
     position: relative;
     left: 180px;
     top: -93px;
     color: rgba(128, 128, 128, 0.575);
 }
-.discription{
+.text-mu{
+    position: relative;
+    left: 200px;
+    top: -93px;
+    color: rgba(128, 128, 128, 0.575);
+}
+.discription {
     position: relative;
     left: 70px;
     top: -90px;
     color: rgba(128, 128, 128, 0.603);
 }
-.text{
+.text {
     margin-top: -60px;
 }
-.f{
+.f {
     border: none;
     background-color: white;
     cursor: pointer;
@@ -92,6 +132,157 @@
     left: 80%;
     top: -120px;
 }
-.f:hover{
+.f:hover {
     color: rgba(23, 23, 243, 0.719);
+    border-radius: 5px;
+}
+.comment {
+    color: grey;
+    position: relative;
+    left: 70%;
+    font-weight: 700;
+}
+.line {
+    border: 1px solid rgba(150, 148, 148, 0.5);
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+button {
+    border: none;
+    background-color: white;
+    font-size: medium;
+}
+.btn {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.cardl {
+    border: 1px solid black;
+    width: 20%;
+    height: 300px;
+    position: fixed; 
+    left: 20px; 
+    top: 100px; 
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.bg{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+.logol{
+    width: 80px;
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+.plus{
+    width: 28px;
+    position: relative;
+    top: -50px;
+    left: -15px;
+    background-color: white;
+    border-radius: 60px;
+}
+.t{
+    font-weight: bolder;
+    font-size:20px;
+    position: relative;
+    top: -45px;
+    left: 10px;
+}
+.d{
+    color: rgba(110, 107, 107, 0.788);
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+.a{
+    position: relative;
+    top: -30px;
+    left: 10px;
+    color: rgba(110, 107, 107, 0.788);
+}
+.cardr{
+    border: 1px solid black;
+    width: 22%;
+    position: fixed; 
+    right: 20px; 
+    top: 80px; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.b{
+    font-weight: bolder;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    font-size: larger;
+}
+.fa-info{
+    position: relative;
+    left: 99%;
+    top: -65px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.c{
+    width: 50px;
+    border-radius: 50px
+}
+.na{
+    font-weight: bold;
+    position: relative;
+    left: 65px;
+    top: -50px;
+}
+.da{
+    position: relative;
+    left: 60px;
+    top: -45px;
+    color: rgba(110, 108, 108, 0.801);
+}
+.bat{
+    position: relative;
+    top: -25px;
+    left: 10px;
+    border: 1px solid rgb(59, 48, 48);
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bat:hover{
+    border: 2px solid black;
+    background-color: gainsboro;
+}
+.ba{
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    left: 10px;
+    border: 1px solid rgb(59, 48, 48);
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+}
+.ba:hover{
+    border: 2px solid black;
+    background-color: gainsboro;
+}
+.fa-thumbs-up, .fa-comment-dots, .fa-retweet , .fa-location-arrow{
+    font-size: 25px;
+    color: rgb(85, 84, 84);
+    cursor: pointer;
 }
